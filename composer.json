@@ -9,6 +9,9 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "autoload": {
+        "psr-0": {
+            "PpcDevMode": "/"
+        },
         "classmap": [
             "ComposerScripts.php"
         ]
@@ -16,10 +19,5 @@
 
     "require": {
 
-    },
-    "require-dev": {
-    },
-    "repositories": [
-
-    ]
+    }
 }
