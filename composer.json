@@ -10,7 +10,7 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "PpcDevMode\\": "/"
+            "PpcDevMode\\": "/src"
         },
         "classmap": [
           "Module.php"
