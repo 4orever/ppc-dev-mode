@@ -11,9 +11,11 @@
     "autoload": {
         "psr-4": {
             "PpcDevMode\\": "/"
-        }
+        },
+        "classmap": [
+          "Module.php"
+        ]
     },
-
     "require": {
 
     }
