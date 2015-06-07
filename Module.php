@@ -2,7 +2,6 @@
 
 namespace PpcDevMode;
 
-use Dotenv;
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\Mvc\ModuleRouteListener;
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
@@ -25,8 +24,7 @@ class Module implements AutoloaderProviderInterface,
 
     public function onBootstrap(MvcEvent $e)
     {
-        Dotenv::setEnvironmentVariable('DEVELOPMENT_MODE', true);
-
+        $_SERVER['DEVELOPMENT_MODE'] = true;
         $serviceManager = $e->getApplication()->getServiceManager();
         $eventManager        = $e->getApplication()->getEventManager();
         $moduleRouteListener = new ModuleRouteListener();
