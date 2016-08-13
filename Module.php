@@ -47,7 +47,7 @@ class Module implements AutoloaderProviderInterface,
     {
         return array(
             'invokables' => array(
-                'FirePhpProfiler' => 'Application\FirePhpProfiler',
+                'FirePhpProfiler' => 'PpcCore\FirePhpProfiler',
             )
         );
     }
